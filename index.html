@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CyberSafe - Security Awareness</title>
+
+    <!-- Connecting CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>CyberSafe</h1>
+        <p>Social Engineering Awareness & Training</p>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+
+            <h2>Stay Alert. Stay Secure.</h2>
+
+            <p>
+                Learn how cyber attackers manipulate people
+                through phishing, pretexting and baiting.
+            </p>
+
+            <button onclick="showModules()">
+                Start Learning
+            </button>
+
+        </section>
+        <section class="modules" id="modules">
+
+    <h2>Explore Security Threats</h2>
+
+    <p class="module-intro">
+        Learn to identify common social engineering attacks.
+    </p>
+
+    <div class="module-container">
+
+        <div class="module-card"
+        onclick="openModule('phishing')">
+            <h3>🎣 Phishing</h3>
+            <p>
+                Learn how attackers use fake emails,
+                messages and websites to steal information.
+            </p>
+        </div>
+
+        <div class="module-card"
+        onclick="openModule('pretexting')">
+            <h3>🎭 Pretexting</h3>
+            <p>
+                Understand how attackers create fake
+                identities to gain confidential information.
+            </p>
+        </div>
+
+        <div class="module-card"
+        onclick="openModule('baiting')">
+            <h3>🎁 Baiting</h3>
+            <p>
+                Discover how attackers use tempting
+                offers and infected devices to trick victims.
+            </p>
+        </div>
+
+    </div>
+    <div id="module-content"></div>
+
+    <!-- Interactive Quiz Section -->
+    <section class="quiz-section" id="quiz">
+
+        <h2>Test Your Cybersecurity Knowledge 🛡️</h2>
+
+        <p>
+            Think you've understood social engineering?
+            Take this quiz and test your knowledge!
+        </p>
+
+        <button onclick="startQuiz()">
+            Start Quiz
+        </button>
+
+        <div id="quiz-area"></div>
+
+        <div id="quiz-result"></div>
+
+    </section>
+
+
+</section>
+
+    </main>
+
+        </main>
+
+    <!-- Website Footer -->
+    <footer class="site-footer">
+
+        <h3>🛡️ CyberSafe</h3>
+
+        <p>
+            Social Engineering Awareness & Training
+        </p>
+
+        <p>
+            Learn to identify threats. Stay safe online.
+        </p>
+
+        <div class="footer-tech">
+            Built using HTML | CSS | JavaScript
+        </div>
+
+        <p class="copyright">
+            © 2026 CyberSafe. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
